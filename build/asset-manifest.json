@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/joeygil-portfolio-2022/static/css/main.390f62e3.css",
+    "main.js": "/joeygil-portfolio-2022/static/js/main.a2704e61.js",
+    "static/js/787.5ebf04a9.chunk.js": "/joeygil-portfolio-2022/static/js/787.5ebf04a9.chunk.js",
+    "static/media/lined-paper-torn.png": "/joeygil-portfolio-2022/static/media/lined-paper-torn.1023ced9d304dd94ebf1.png",
+    "static/media/mountains-bg.jpg": "/joeygil-portfolio-2022/static/media/mountains-bg.c7317ce465b4451e9eb1.jpg",
+    "static/media/geo-pattern.jpg": "/joeygil-portfolio-2022/static/media/geo-pattern.76f094b951b26cdc5203.jpg",
+    "static/media/calculator.png": "/joeygil-portfolio-2022/static/media/calculator.c9ee2ea761a355fa2a5f.png",
+    "static/media/todo-app.png": "/joeygil-portfolio-2022/static/media/todo-app.2803964e3a36c69d36d5.png",
+    "static/media/reddit-client.png": "/joeygil-portfolio-2022/static/media/reddit-client.184c52c8806514881de9.png",
+    "static/media/react.png": "/joeygil-portfolio-2022/static/media/react.da363b94e54e6deee792.png",
+    "static/media/c-sharp.png": "/joeygil-portfolio-2022/static/media/c-sharp.d8e9a9289dcc76d931b9.png",
+    "static/media/javascript-certificate.jpg": "/joeygil-portfolio-2022/static/media/javascript-certificate.7766c31b01d40ddeae50.jpg",
+    "static/media/html-certificate.jpg": "/joeygil-portfolio-2022/static/media/html-certificate.86321ed2a8ba56ec799e.jpg",
+    "static/media/css-certificate.jpg": "/joeygil-portfolio-2022/static/media/css-certificate.5d0cb1b135f33009bfd9.jpg",
+    "static/media/reddit-schpeel.png": "/joeygil-portfolio-2022/static/media/reddit-schpeel.c607c0011424a6dbee06.png",
+    "static/media/calculator-schpeel.png": "/joeygil-portfolio-2022/static/media/calculator-schpeel.2ed14a3272a340ec636c.png",
+    "static/media/todo-app-schpeel.png": "/joeygil-portfolio-2022/static/media/todo-app-schpeel.b1c5d8200f5ce231a584.png",
+    "static/media/joey.png": "/joeygil-portfolio-2022/static/media/joey.c58b1deea8708dee7364.png",
+    "static/media/css.png": "/joeygil-portfolio-2022/static/media/css.0c2690a25c4bec03822a.png",
+    "static/media/linked-in.png": "/joeygil-portfolio-2022/static/media/linked-in.823ef928df65757401a7.png",
+    "static/media/github-logo-wht.png": "/joeygil-portfolio-2022/static/media/github-logo-wht.987334e9f782cc505f25.png",
+    "static/media/javascript.png": "/joeygil-portfolio-2022/static/media/javascript.266bd9fb2663dcc057b4.png",
+    "index.html": "/joeygil-portfolio-2022/index.html",
+    "main.390f62e3.css.map": "/joeygil-portfolio-2022/static/css/main.390f62e3.css.map",
+    "main.a2704e61.js.map": "/joeygil-portfolio-2022/static/js/main.a2704e61.js.map",
+    "787.5ebf04a9.chunk.js.map": "/joeygil-portfolio-2022/static/js/787.5ebf04a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.390f62e3.css",
+    "static/js/main.a2704e61.js"
+  ]
+}
