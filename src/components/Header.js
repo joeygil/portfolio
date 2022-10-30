@@ -23,13 +23,18 @@ const Header = () => {
     });
   };
 
+  const backgroundImageFade = (e) => {
+    document.querySelector(".background-img").style.opacity = 1;
+  };
+
   return (
     <>
       <header>
         <img
           src={require("../images/mountains-bg.jpg")}
-          className="background"
-          alt="backgroun image of mountains"
+          className="background-img background"
+          alt="mountains"
+          onLoad={(e) => backgroundImageFade()}
         ></img>
         <h1 className="title">
           <span className="tags-in"> &#x3c;h1&#x3e; </span>
