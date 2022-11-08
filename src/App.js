@@ -12,9 +12,9 @@ import { useState, useEffect } from "react";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    document.addEventListener("DOMContentLoaded", setIsLoading(false));
-  }, []);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 2000);
 
   return (
     <div className="wrapper">
@@ -22,6 +22,7 @@ function App() {
         <div className="loader-container">
           <div className="loader">
             <ReactLoading type={"bars"} color={"mediumorchid"} />
+            <h2 className="loading-text">Loading...</h2>
           </div>
         </div>
       ) : (

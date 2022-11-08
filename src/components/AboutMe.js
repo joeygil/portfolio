@@ -1,48 +1,47 @@
 import "../App.css";
 
-let aboutMeElement;
+// let aboutMeElement;
 
-window.addEventListener(
-  "load",
-  () => {
-    aboutMeElement = document.querySelector(".about-me-container");
+// window.addEventListener(
+//   "load",
+//   () => {
+//     aboutMeElement = document.querySelector(".about-me-container");
+//     createObserver();
+//   },
+//   false
+// );
 
-    createObserver();
-  },
-  false
-);
+// const createObserver = () => {
+//   let observer;
 
-const createObserver = () => {
-  let observer;
+//   let options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: buildThresholdList(),
+//   };
 
-  let options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: buildThresholdList(),
-  };
+//   observer = new IntersectionObserver(handleIntersect, options);
+//   observer.observe(aboutMeElement);
+// };
 
-  observer = new IntersectionObserver(handleIntersect, options);
-  observer.observe(aboutMeElement);
-};
+// const buildThresholdList = () => {
+//   let thresholds = [];
+//   let numSteps = 20;
 
-const buildThresholdList = () => {
-  let thresholds = [];
-  let numSteps = 20;
+//   for (let i = 1.0; i <= numSteps; i++) {
+//     let ratio = i / numSteps;
+//     thresholds.push(ratio);
+//   }
 
-  for (let i = 1.0; i <= numSteps; i++) {
-    let ratio = i / numSteps;
-    thresholds.push(ratio);
-  }
+//   thresholds.push(0);
+//   return thresholds;
+// };
 
-  thresholds.push(0);
-  return thresholds;
-};
-
-const handleIntersect = (entries, observer) => {
-  entries.forEach((entry) => {
-    entry.target.style.opacity = entry.intersectionRatio;
-  });
-};
+// const handleIntersect = (entries, observer) => {
+//   entries.forEach((entry) => {
+//     entry.target.style.opacity = entry.intersectionRatio;
+//   });
+// };
 
 const AboutMe = () => {
   return (

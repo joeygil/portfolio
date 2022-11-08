@@ -24,7 +24,7 @@ const Main = () => {
             target="_blank"
           >
             <div className="todo">
-              {" "}
+              <h3 className="project-overlays">Todo List</h3>
               <img
                 className="todo-schpeel"
                 src={require("../images/todo-app-schpeel.png")}
@@ -38,7 +38,7 @@ const Main = () => {
             target="_blank"
           >
             <div className="calculator">
-              {" "}
+              <h3 className="project-overlays">Calculator</h3>
               <img
                 className="calculator-schpeel"
                 src={require("../images/calculator-schpeel.png")}
@@ -52,7 +52,7 @@ const Main = () => {
             target="_blank"
           >
             <div className="reddit-client">
-              {" "}
+              <h3 className="project-overlays">Reddit Client</h3>
               <img
                 className="reddit-schpeel"
                 src={require("../images/reddit-schpeel.png")}

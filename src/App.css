@@ -56,9 +56,9 @@ header {
   transition: 1s;
 }
 
-/* .background-img {
+.background-img {
   opacity: 0;
-} */
+}
 
 .foreground,
 .background {
@@ -251,15 +251,11 @@ header {
   align-items: center;
   justify-content: center;
   background-color: black;
-  opacity: 0.6;
-
+  opacity: 0.9;
 }
-.loader {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+.loading-text {
+  font-size: 1rem;
 }
 
 main {
@@ -313,6 +309,8 @@ h2 {
   transform: rotate(-10deg);
   font-family: "Cutive Mono", monospace;
   margin-right: 5px;
+  padding-bottom: 20px;
+  padding-top: 2.5px;
 }
 
 @media only screen and (max-width: 1139px) and (min-width: 945px) {
@@ -359,7 +357,7 @@ h2 {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    height: 1000px;
+    height: 1050px;
     padding: 0;
   }
   .tags-in {
@@ -382,6 +380,9 @@ h2 {
   background-size: cover;
   background-position: center;
   transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator-schpeel {
@@ -465,6 +466,9 @@ h2 {
   background-size: cover;
   background-position: center;
   transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .reddit-schpeel {
@@ -486,6 +490,28 @@ h2 {
 .reddit-client:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.project-overlays {
+  font-size: 3.4rem;
+  color: mediumorchid;
+  text-shadow: 2px 5px 18px rgba(0, 0, 0, 0.6);
+  translate: rotate(30deg);
+  text-decoration: none;
+  background-color: grey;
+  opacity: 0.9;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .project-overlays {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 821px) {
@@ -540,7 +566,7 @@ h2 {
   grid-template-columns: 1fr 1.5fr 1fr;
   grid-template-rows: 0.2fr 2fr;
   grid-gap: 2px;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -606,7 +632,7 @@ h2 {
   .about-me-container {
     display: flex;
     width: 75%;
-    padding: 15px;
+    padding: 30px;
   }
   .about-me-box {
     flex-direction: column;
