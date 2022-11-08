@@ -4,11 +4,17 @@ const Main = () => {
   return (
     <>
       <main>
-        <span className="tags-in"> &#x3c;h2&#x3e; </span>
+        <span className="tags-in-top"> &#x3c;h2&#x3e; </span>
         <h2 id="web-dev" className="web-dev">
           💻 frontendDeveloper
         </h2>
-        <span className="tags-in"> &#x3c;/h2&#x3e; </span>
+        <span className="tags-in-top"> &#x3c;/h2&#x3e; </span>
+      </main>
+      <br />
+      <main className="specialising-in">
+        <p className="schpeel">
+          Specialising in React, Javascript, CSS and Typescript.
+        </p>
       </main>
       <div className="container" id="main">
         <div className="main-container">

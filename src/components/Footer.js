@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container">
+        <p className="schpeel">Socials:</p>
         <a
           className="github-link-footer"
           href="https://github.com/joeygil"

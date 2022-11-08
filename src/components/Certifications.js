@@ -9,6 +9,9 @@ const Certifications = () => {
             {" "}
             <span className="tags-in"> &#x3c;h2&#x3e; </span>🏆certifications.
             <span className="tags-in"> &#x3c;/h2&#x3e; </span>
+            <p className="schpeel">
+              I am always learning and love to do so; here are some of the certificates I have earned so far.
+            </p>
           </h2>
           <div className="javascript-cert">
             <img
