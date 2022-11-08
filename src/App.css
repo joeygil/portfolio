@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   background-image: url("./images/geo-pattern.jpg");
   background-size: 0;
   background-color: black;
+ 
 }
 
 .wrapper {
