@@ -28,7 +28,7 @@ function App() {
     setLoadingText(textArray[index]);
   }, []);
 
-  const pickLoadingText = setTimeout(() => {
+  setTimeout(() => {
     setIsLoading(false);
   }, 2200);
 
