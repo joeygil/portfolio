@@ -75,8 +75,7 @@ header {
   color: white;
   text-shadow: 0 0 5px black;
   position: relative;
-  animation: slide 1s linear;
-  transition: color 0.5s ease-in;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -91,9 +90,37 @@ header {
   }
 }
 
-@keyframes slide {
-  to {
-    transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+
+.animate {
+  position: relative;
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes floating {
+  0% {
+    opacity: 0.5;
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -0px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .animate {
+    animation: none;
   }
 }
 
@@ -255,6 +282,11 @@ header {
   justify-content: center;
   background-color: black;
   opacity: 0.9;
+  z-index: -1;
+}
+
+.loader-wheel {
+  opacity: 1;
 }
 
 .loading-text {
@@ -963,6 +995,20 @@ textarea {
 
 .html-cert-img:hover {
   width: 90%;
+}
+
+@media only screen and (max-width: 500px) {
+  .javascript-cert-img:hover {
+    width: 100%;
+  }
+
+  .css-cert-img:hover {
+    width: 100%;
+  }
+
+  .html-cert-img:hover {
+    width: 100%;
+  }
 }
 
 .get-in-touch {

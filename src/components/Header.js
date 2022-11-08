@@ -23,7 +23,7 @@ const Header = () => {
     });
   };
 
-  const backgroundImageFade = (e) => {
+  const backgroundImageFade = () => {
     document.querySelector(".background-img").style.opacity = 1;
   };
 
@@ -34,11 +34,28 @@ const Header = () => {
           src={require("../images/mountains-bg.jpg")}
           className="background-img background"
           alt="mountains"
-          onLoad={(e) => backgroundImageFade()}
+          onLoad={() => backgroundImageFade()}
         ></img>
         <h1 className="title">
           <span className="tags-in"> &#x3c;h1&#x3e; </span>
-          <span>Joey Gilchrist.</span>
+          <div className="title-container">
+            <span className="animate">J</span>
+            <span className="animate">o</span>
+            <span className="animate">e</span>
+            <span className="animate">y</span>
+            <span> </span>
+            <span className="animate">G</span>
+            <span className="animate">i</span>
+            <span className="animate">l</span>
+            <span className="animate">c</span>
+            <span className="animate">h</span>
+            <span className="animate">r</span>
+            <span className="animate">i</span>
+            <span className="animate">s</span>
+            <span className="animate">t</span>
+            <span>.</span>
+          </div>
+
           <span className="tags-in"> &#x3c;/h1&#x3e; </span>
         </h1>
       </header>

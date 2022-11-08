@@ -8,6 +8,7 @@ import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
 import ReactLoading from "react-loading";
 import { useState, useEffect } from "react";
+import Loader from "react-loaders";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,6 +23,7 @@ function App() {
         <div className="loader-container">
           <div className="loader">
             <ReactLoading type={"bars"} color={"mediumorchid"} />
+
             <h2 className="loading-text">Loading...</h2>
           </div>
         </div>
