@@ -364,7 +364,7 @@ h2 {
 
 @media only screen and (max-width: 901px) {
   main {
-    top: 50px;
+    top: 80px;
   }
   h2 {
     font-size: 1.75rem;
