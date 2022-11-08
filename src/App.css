@@ -39,6 +39,7 @@ header {
   position: relative;
   /* top: -10px; */
   font-family: "Cutive Mono", monospace;
+  margin-bottom: 20px;
 }
 
 .chevron {
