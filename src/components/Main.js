@@ -19,6 +19,21 @@ const Main = () => {
             &#x22;my-work&#x22;&#x3e;{" "}
           </span>
           <a
+            className="adventure-link"
+            href="https://theadventureapp.netlify.app"
+            target="_blank"
+          >
+            <div className="adventure">
+              <h3 className="project-overlays">Adventure App</h3>
+              <img
+                className="adventure-schpeel"
+                src={require("../images/adventure-schpeel.png")}
+                alt="info on my todo app project"
+              />
+            </div>
+          </a>
+
+          <a
             className="todo-link"
             href="https://joeygil.github.io/todoapp/"
             target="_blank"
@@ -60,7 +75,6 @@ const Main = () => {
               />
             </div>
           </a>
-          <span className="tags-in-dark"> &#x3c;/div&#x3e; </span>
         </div>
       </div>
     </>

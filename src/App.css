@@ -139,6 +139,7 @@ header {
 
 .box-left img:hover {
   width: 300px;
+  border-radius: 50px;
 }
 
 .box-center {
@@ -162,7 +163,7 @@ header {
 
 .box-center img:hover {
   width: 300px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 .box-right {
   display: flex;
@@ -186,6 +187,7 @@ header {
 
 .box-right img:hover {
   width: 300px;
+  border-radius: 50px;
 }
 
 .box-far-right {
@@ -209,7 +211,7 @@ header {
 }
 
 .box-far-right img:hover {
-  width: 300px;
+  width: 290px;
 }
 
 .box-inset {
@@ -262,11 +264,11 @@ main {
   background-color: black;
   color: white;
   transform: translateZ(-5px) scale(1.5);
-  border-top-width: 10px;
+  border-top-width: 5px;
   border-top-style: solid;
   border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
-  border-bottom-width: 10px;
-  border-bottom-style: solid;
+  /* border-bottom-width: 10px;
+  border-bottom-style: solid; */
   margin-bottom: 10px;
   padding: 5px;
   display: flex;
@@ -357,8 +359,8 @@ h2 {
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    height: 1050px;
-    padding: 0;
+    height: 100%;
+    padding: 20px;
   }
   .tags-in {
     display: none;
@@ -392,6 +394,13 @@ h2 {
   transition: 1s;
 }
 
+.adventure-schpeel {
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s;
+}
+
 @media only screen and (max-width: 821px) {
   .calculator-schpeel {
     display: none;
@@ -400,6 +409,10 @@ h2 {
     display: none;
   }
   .reddit-schpeel {
+    display: none;
+  }
+
+  .adventure-schpeel {
     display: none;
   }
 }
@@ -416,6 +429,22 @@ h2 {
 .calculator:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.adventure {
+  width: 300px;
+  min-width: 33%;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background-image: url(./images/adventureapp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
 }
 
 .todo {
@@ -445,12 +474,26 @@ h2 {
   opacity: 1;
 }
 
+.adventure-schpeel:hover {
+  opacity: 1;
+}
+
 .todo:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
 }
 
+.adventure:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+}
+
 .todo:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.adventure:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -493,7 +536,11 @@ h2 {
 }
 
 .project-overlays {
-  font-size: 3.4rem;
+  font-size: 2rem;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
+  padding: 10px;
   color: #fed198;
   text-shadow: 2px 5px 18px rgba(0, 0, 0, 0.6);
   translate: rotate(30deg);
@@ -523,10 +570,12 @@ a {
   .calculator {
     width: 90%;
     margin: 20px 0;
+    height: 150px;
   }
 
   .todo {
     width: 90%;
+    height: 150px;
   }
   .todo-link {
     width: 100%;
@@ -534,8 +583,20 @@ a {
     justify-content: center;
   }
 
+  .adventure {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .adventure-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .reddit-client {
     width: 90%;
+    height: 150px;
   }
   .reddit-link {
     width: 100%;
@@ -590,11 +651,17 @@ a {
 .me-large-screen {
   margin: 20px;
   border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .me-small-screen {
   margin: 20px;
   border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .blurb {
@@ -870,15 +937,30 @@ textarea {
 }
 
 .javascript-cert-img {
-  width: 80%;
+  width: 60%;
+  transition: 1s;
 }
 
 .css-cert-img {
-  width: 80%;
+  width: 60%;
+  transition: 1s;
 }
 
 .html-cert-img {
-  width: 80%;
+  width: 60%;
+  transition: 1s;
+}
+
+.javascript-cert-img:hover {
+  width: 100%;
+}
+
+.css-cert-img:hover {
+  width: 100%;
+}
+
+.html-cert-img:hover {
+  width: 100%;
 }
 
 .get-in-touch {
