@@ -5,7 +5,6 @@ body {
   background-image: url("./images/geo-pattern.jpg");
   background-size: 0;
   background-color: black;
- 
 }
 
 .wrapper {
@@ -60,7 +59,7 @@ header {
 
 .background-img {
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .foreground,
