@@ -23,7 +23,6 @@ function App() {
         <div className="loader-container">
           <div className="loader">
             <ReactLoading type={"bars"} color={"mediumorchid"} />
-
             <h2 className="loading-text">Loading...</h2>
           </div>
         </div>
