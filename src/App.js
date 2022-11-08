@@ -8,22 +8,41 @@ import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
 import ReactLoading from "react-loading";
 import { useState, useEffect } from "react";
-import Loader from "react-loaders";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [loadingText, setLoadingText] = useState("");
+
+  useEffect(() => {
+    const textArray = [
+      "nearly there...",
+      "patience is a virtue...",
+      "good things come to those who wait...",
+      "hang on a sec...",
+      "won't be long...",
+      "i'll be with you in 2 secs...",
+      "take a seat, i'll be with you shortly",
+      "just turning your corner now...",
+    ];
+    let index = Math.floor(Math.random() * textArray.length);
+    setLoadingText(textArray[index]);
+  }, []);
+
+  const pickLoadingText = setTimeout(() => {
+    setIsLoading(false);
+  }, 2200);
 
   setTimeout(() => {
-    setIsLoading(false);
-  }, 2000);
+    document.querySelector("body").style.backgroundSize = "cover";
+  }, 3000);
 
   return (
     <div className="wrapper">
       {isLoading ? (
         <div className="loader-container">
           <div className="loader">
-            <ReactLoading type={"bars"} color={"mediumorchid"} />
-            <h2 className="loading-text">Loading...</h2>
+            <ReactLoading type={"spinningBubbles"} color={"mediumorchid"} />
+            <h2 className="loading-text">{loadingText}</h2>
           </div>
         </div>
       ) : (
