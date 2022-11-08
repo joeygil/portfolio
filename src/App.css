@@ -90,13 +90,13 @@ header {
     position: relative;
     right: -175px;
     font-size: 0.7rem;
-    top: -20px;
+    top: -25px;
   }
 
   .title {
     margin: 0 30px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
