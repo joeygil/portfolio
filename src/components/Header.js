@@ -2,8 +2,8 @@ import "../App.css";
 
 const Header = () => {
   setTimeout(() => {
-    document.querySelector(".chevron").style.width = "100px";
-    document.querySelector(".scroll").style.fontSize = "18px";
+    document.querySelector(".chevron").style.width = "50px";
+    document.querySelector(".scroll").style.fontSize = "14px";
   }, 2000);
 
   // window.addEventListener(
@@ -39,7 +39,8 @@ const Header = () => {
         <h1 className="title">
           <span className="tags-in"> &#x3c;h1&#x3e; </span>
           <div className="title-container">
-            <span className="animate">J</span>
+            <span>&#123;</span>
+            <span className="animate">j</span>
             <span className="animate">o</span>
             <span className="animate">e</span>
             <span className="animate">y</span>
@@ -53,7 +54,7 @@ const Header = () => {
             <span className="animate">i</span>
             <span className="animate">s</span>
             <span className="animate">t</span>
-            <span>.</span>
+            <span>&#125;</span>
           </div>
 
           <span className="tags-in"> &#x3c;/h1&#x3e; </span>

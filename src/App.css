@@ -70,12 +70,11 @@ header {
 }
 
 .title {
-  font-size: 7rem;
-  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  font-family: "B612 Mono", monospace;
   color: white;
   text-shadow: 0 0 5px black;
   position: relative;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -86,10 +85,9 @@ header {
   .title {
     margin: 30px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
-
 
 .animate {
   position: relative;
@@ -315,7 +313,8 @@ main {
 h2 {
   color: #fed198;
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: "B612 Mono", monospace;
 }
 
 @media only screen and (max-width: 901px) {
@@ -569,7 +568,7 @@ h2 {
 }
 
 .project-overlays {
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-top-width: 5px;
   border-top-style: solid;
   border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
@@ -582,6 +581,7 @@ h2 {
   opacity: 0.9;
   width: 100%;
   text-align: center;
+  font-family: "B612 Mono", monospace;
 }
 
 @media only screen and (min-width: 500px) {
