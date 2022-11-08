@@ -48,8 +48,8 @@ const AboutMe = () => {
     <div className="container background">
       <div className="about-me-container">
         <h2 className="about-me-h2">
-          <span className="tags-in"> &#x3c;h2&#x3e; </span>🙋🏻‍♂️aboutMe.
-          <span className="tags-in"> &#x3c;/h2&#x3e; </span>
+          <span className="tags-in-about"> &#x3c;h2&#x3e; </span>🙋🏻‍♂️aboutMe.
+          <span className="tags-in-about"> &#x3c;/h2&#x3e; </span>
         </h2>
 
         <div className="about-me-box">

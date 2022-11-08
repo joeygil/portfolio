@@ -6,14 +6,13 @@ const Certifications = () => {
       <div className="container">
         <div className="certi-container">
           <h2 className="certi-title">
-            {" "}
-            <span className="tags-in"> &#x3c;h2&#x3e; </span>🏆certifications.
-            <span className="tags-in"> &#x3c;/h2&#x3e; </span>
+            <span className="tags-in-about"> &#x3c;h2&#x3e; </span>🏆certifications.
+            <span className="tags-in-about"> &#x3c;/h2&#x3e; </span>
             <p className="schpeel-certi">
               I am always learning and love to do so; I'm currently working my
               way through Codecademy's Full Stack path and am always on the
-              lookout for courses to further my knowledge. Here are some of
-              the courses i've successfully completed so far:
+              lookout for courses to further my knowledge. Here are some of the
+              courses i've successfully completed so far:
             </p>
           </h2>
           <div className="javascript-cert">

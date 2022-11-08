@@ -37,7 +37,7 @@ const Header = () => {
           onLoad={() => backgroundImageFade()}
         ></img>
         <h1 className="title">
-          <span className="tags-in"> &#x3c;h1&#x3e; </span>
+          <span className="tags-in">&#x3c;h1&#x3e;</span>
           <div className="title-container">
             <span>&#123;</span>
             <span className="animate">j</span>
@@ -57,7 +57,7 @@ const Header = () => {
             <span>&#125;</span>
           </div>
 
-          <span className="tags-in"> &#x3c;/h1&#x3e; </span>
+          <span className="tags-in-bottom">&#x3c;/h1&#x3e;</span>
         </h1>
       </header>
       <div className="chevron-container">

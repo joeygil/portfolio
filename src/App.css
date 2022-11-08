@@ -81,7 +81,16 @@ header {
 
 @media only screen and (max-width: 768px) {
   .title .tags-in {
-    display: none;
+    position: relative;
+    left: -175px;
+    top: 12px;
+  }
+
+  .title .tags-in-bottom {
+    position: relative;
+    right: -175px;
+    font-size: 0.7rem;
+    top: -20px;
   }
 
   .title {
@@ -355,7 +364,7 @@ h2 {
 
 @media only screen and (max-width: 901px) {
   main {
-    margin-top: 175px;
+    top: 50px;
   }
   h2 {
     font-size: 1.75rem;
@@ -370,6 +379,32 @@ h2 {
   font-family: "Cutive Mono", monospace;
   margin: 3px;
   letter-spacing: normal;
+  position: relative;
+  left: -65px;
+  top: 40px;
+}
+
+.tags-in-about {
+  color: #fed198;
+  font-size: 0.9rem;
+  display: inline-block;
+  transform: rotate(-10deg);
+  font-family: "Cutive Mono", monospace;
+  margin-right: 5px;
+  letter-spacing: normal;
+}
+
+.tags-in-bottom {
+  color: #fed198;
+  font-size: 1.2rem;
+  display: inline-block;
+  transform: rotate(-10deg);
+  font-family: "Cutive Mono", monospace;
+  margin: 3px;
+  letter-spacing: normal;
+  position: relative;
+  right: -100%;
+  top: -60px;
 }
 
 .tags-in-top {
@@ -391,12 +426,6 @@ h2 {
   margin-right: 5px;
   padding-bottom: 20px;
   padding-top: 2.5px;
-}
-
-@media only screen and (max-width: 1139px) and (min-width: 945px) {
-  .tags-in-dark {
-    display: none;
-  }
 }
 
 .tags-out {
@@ -1010,7 +1039,7 @@ textarea {
 .schpeel-certi {
   font-size: 0.8rem;
   font-family: "Cutive Mono", monospace;
-  color: #fed198;
+  color: white;
   text-align: justify;
   margin: 10px 20px;
 }
