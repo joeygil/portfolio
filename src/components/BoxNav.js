@@ -16,7 +16,10 @@ const BoxNav = () => {
         <img src={require("../images/css.png")} alt="css logo"></img>
       </div>
       <div className="box-far-right">
-        <img src={require("../images/c-sharp.png")} alt="c sharp logo"></img>
+        <img
+          src={require("../images/typescript-logo.png")}
+          alt="typescript logo"
+        ></img>
       </div>
     </div>
   );

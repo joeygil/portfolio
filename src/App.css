@@ -211,7 +211,8 @@ header {
 }
 
 .box-far-right img:hover {
-  width: 290px;
+  width: 300px;
+  border-radius: 50px;
 }
 
 .box-inset {
@@ -888,7 +889,7 @@ textarea {
   position: relative;
   top: 1200px;
   width: 100%;
-  height: 500px;
+  height: 100%;
   background-color: black;
   color: white;
   border-top-width: 10px;
@@ -898,6 +899,7 @@ textarea {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 2fr;
   bottom: 100px;
+  padding: 50px;
 }
 
 @media only screen and (max-width: 821px) {
@@ -952,15 +954,15 @@ textarea {
 }
 
 .javascript-cert-img:hover {
-  width: 100%;
+  width: 90%;
 }
 
 .css-cert-img:hover {
-  width: 100%;
+  width: 90%;
 }
 
 .html-cert-img:hover {
-  width: 100%;
+  width: 90%;
 }
 
 .get-in-touch {
