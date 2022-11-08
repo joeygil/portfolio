@@ -4,7 +4,7 @@ let aboutMeElement;
 
 window.addEventListener(
   "load",
-  (event) => {
+  () => {
     aboutMeElement = document.querySelector(".about-me-container");
 
     createObserver();
@@ -57,15 +57,16 @@ const AboutMe = () => {
           <p className="blurb">
             Efficient Junior Web Developer with excellent communication and
             organisational abilities brings enthusiasm and detailed
-            understanding of various programming languages. Resourceful
-            approach to solving diverse problems. Deadline-driven and
-            knowledgeable professional with strong desire to learn and
-            contribute to team success. Successful at improving usability,
-            performance and functionality applying skills in HTML, C#
-            JavaScript, Typescript CSS and ReactJS. Collaborative and
-            hardworking team player with critical thinking skills and systematic
-            approach.
-            <p className="socials-icons">Socials:</p>
+            understanding of various programming languages. Resourceful approach
+            to solving diverse problems. Deadline-driven and knowledgeable
+            professional with strong desire to learn and contribute to team
+            success. Successful at improving usability, performance and
+            functionality applying skills in HTML, C# JavaScript, Typescript CSS
+            and ReactJS. Collaborative and hardworking team player with critical
+            thinking skills and systematic approach.
+            <br />
+            <span className="socials-icons">Socials:</span>
+            <br />
             <a
               className="github-link"
               href="https://github.com/joeygil"

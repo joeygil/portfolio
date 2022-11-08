@@ -56,9 +56,9 @@ header {
   transition: 1s;
 }
 
-.background-img {
+/* .background-img {
   opacity: 0;
-}
+} */
 
 .foreground,
 .background {
@@ -243,6 +243,23 @@ header {
   .box-right img {
     width: 70%;
   }
+}
+
+.loader-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.6;
+
+}
+.loader {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 main {
