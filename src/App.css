@@ -562,8 +562,8 @@ h2 {
 }
 
 .calculator {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/calculator.png);
@@ -633,8 +633,8 @@ h2 {
 }
 
 .news-app {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/newsapp.jpg);
@@ -649,8 +649,8 @@ h2 {
 }
 
 .coming-soon {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-repeat: no-repeat;
@@ -664,8 +664,8 @@ h2 {
 }
 
 .adventure {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/adventureapp.jpg);
@@ -680,9 +680,9 @@ h2 {
 }
 
 .todo {
-  width: 250px;
+  width: 275px;
   min-width: 33%;
-  height: 250px;
+  height: 275px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/todo-app.png);
@@ -751,8 +751,8 @@ h2 {
 }
 
 .reddit-client {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/reddit-client.png);
