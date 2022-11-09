@@ -31,9 +31,9 @@ function App() {
     setLoadingText(textArray[index]);
   }, []);
 
-  // setTimeout(() => {
-  //   setIsLoading(false);
-  // }, 3000);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 3000);
 
   setTimeout(() => {
     document.querySelector("body").style.backgroundSize = "cover";
