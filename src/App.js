@@ -23,27 +23,29 @@ function App() {
       "i'll be with you in 2 secs...",
       "take a seat, i'll be with you shortly",
       "just turning your corner now...",
+      "be there in a minute...",
+      "on my way!",
+      "i'll meet you here in 1 second...",
     ];
     let index = Math.floor(Math.random() * textArray.length);
     setLoadingText(textArray[index]);
   }, []);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 2200);
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  // }, 3000);
 
   setTimeout(() => {
     document.querySelector("body").style.backgroundSize = "cover";
-  }, 3200);
+  }, 4000);
 
   return (
     <div className="wrapper">
       {isLoading ? (
         <div className="loader-container">
-          <div className="loader">
-            <ReactLoading type={"spinningBubbles"} color={"mediumorchid"} />
-            <h2 className="loading-text">{loadingText}</h2>
-          </div>
+          <div className="loader loader-spinner"></div>
+          <br />
+          <h2 className="loading-text">{loadingText}</h2>
         </div>
       ) : (
         <>
