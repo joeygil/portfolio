@@ -1,8 +1,6 @@
 import "../App.css";
 
 const Main = () => {
-
-
   return (
     <>
       <main>
@@ -26,6 +24,22 @@ const Main = () => {
             <br />
             &#x22;my-work&#x22;&#x3e;{" "}
           </span>
+
+          <a
+            className="newsapp-link"
+            href="https://joeygil.github.io/frontendmentor-newsapp/"
+            target="_blank"
+          >
+            <div className="news-app">
+              <h3 className="project-overlays">newsApp</h3>
+              <img
+                className="newsapp-schpeel"
+                src={require("../images/news-app-schpeel.jpg")}
+                alt="info on my todo app project"
+              />
+            </div>
+          </a>
+
           <a
             className="adventure-link"
             href="https://theadventureapp.netlify.app"

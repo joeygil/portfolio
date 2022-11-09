@@ -285,6 +285,10 @@ header {
   }
 }
 
+canvas {
+  position: relative;
+}
+
 .loader-spinner {
   box-sizing: border-box;
   display: inline-block;
@@ -516,7 +520,7 @@ h2 {
 
 .main-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
   justify-content: space-around;
   align-items: flex-start;
   background-color: white;
@@ -556,9 +560,8 @@ h2 {
 }
 
 .calculator {
-  width: 300px;
-  min-width: 33%;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/calculator.png);
@@ -572,6 +575,13 @@ h2 {
 }
 
 .calculator-schpeel {
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.newsapp-schpeel {
   width: 100%;
   border-radius: 15px;
   opacity: 0;
@@ -596,6 +606,10 @@ h2 {
     display: none;
   }
 
+  .newsapp-schpeel {
+    display: none;
+  }
+
   .adventure-schpeel {
     display: none;
   }
@@ -615,10 +629,24 @@ h2 {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+.news-app {
+  width: 250px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background-image: url(./images/newsapp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
 .adventure {
-  width: 300px;
-  min-width: 33%;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/adventureapp.jpg);
@@ -632,9 +660,9 @@ h2 {
 }
 
 .todo {
-  width: 300px;
+  width: 250px;
   min-width: 33%;
-  height: 300px;
+  height: 250px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/todo-app.png);
@@ -662,12 +690,21 @@ h2 {
   opacity: 1;
 }
 
+.newsapp-schpeel:hover {
+  opacity: 1;
+}
+
 .todo:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
 }
 
 .adventure:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+}
+
+.news-app:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
 }
@@ -682,10 +719,14 @@ h2 {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+.news-app:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
 .reddit-client {
-  width: 300px;
-  min-width: 33%;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
   background-image: url(./images/reddit-client.png);
@@ -763,6 +804,18 @@ a {
     height: 150px;
   }
   .todo-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .news-app {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .newsapp-link {
     width: 100%;
     display: flex;
     justify-content: center;
