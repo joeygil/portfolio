@@ -380,7 +380,7 @@ canvas {
   border-bottom-style: solid;
   border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
   z-index: -1;
-  animation: appear 2s 1s ease-in;
+  animation: appear 3s 1s ease-in;
 }
 
 @keyframes appear {
@@ -598,6 +598,13 @@ h2 {
   transition: 1s;
 }
 
+.furniture-schpeel {
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s;
+}
+
 @media only screen and (max-width: 821px) {
   .calculator-schpeel {
     display: none;
@@ -614,6 +621,10 @@ h2 {
   }
 
   .adventure-schpeel {
+    display: none;
+  }
+
+  .furniture-schpeel {
     display: none;
   }
 }
@@ -679,6 +690,22 @@ h2 {
   margin: 10px;
 }
 
+.furniture {
+  width: 275px;
+  height: 275px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background-image: url(./images/frontendmentor-room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  margin: 10px;
+}
+
 .todo {
   width: 275px;
   min-width: 33%;
@@ -711,6 +738,10 @@ h2 {
   opacity: 1;
 }
 
+.furniture-schpeel:hover {
+  opacity: 1;
+}
+
 .newsapp-schpeel:hover {
   opacity: 1;
 }
@@ -730,6 +761,11 @@ h2 {
   cursor: pointer;
 }
 
+.furniture:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+}
+
 .news-app:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
@@ -741,6 +777,11 @@ h2 {
 }
 
 .adventure:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.furniture:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -882,7 +923,20 @@ a {
     height: 150px;
     margin-bottom: 20px;
   }
+
+  .furniture {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
   .adventure-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .furniture-link {
     width: 100%;
     display: flex;
     justify-content: center;

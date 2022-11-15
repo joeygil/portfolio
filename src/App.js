@@ -33,11 +33,11 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 3000);
+  }, 4000);
 
   setTimeout(() => {
     document.querySelector("body").style.backgroundSize = "cover";
-  }, 4000);
+  }, 4500);
 
   return (
     <div className="wrapper">

@@ -99,17 +99,17 @@ const Main = () => {
           </a>
 
           <a
-            className="coming-soon-link"
-            // href="https://joeygil.github.io/frontendmentor-newsapp/"
-            // target="_blank"
+            className="furniture-link"
+            href="https://joeygil.github.io/room-homepage-master/"
+            target="_blank"
           >
-            <div className="coming-soon">
-              <h3 className="project-overlays-coming-soon">comingSoon</h3>
-              {/* <img
-                // className="newsapp-schpeel"
-                // src={require("../images/news-app-schpeel.jpg")}
-                // alt="info on my todo app project"
-              /> */}
+            <div className="furniture">
+              <h3 className="project-overlays">roomFurniture</h3>
+              <img
+                className="furniture-schpeel"
+                src={require("../images/furniture-schpeel.png")}
+                alt="info on my frontendmentor room project"
+              />
             </div>
           </a>
 
