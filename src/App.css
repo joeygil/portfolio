@@ -17,7 +17,7 @@ body {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  transition: 0.4s;
+  transition: 0.5s;
   opacity: 0.5;
 }
 
@@ -64,6 +64,7 @@ body {
 .modal-main-image {
   width: 70%;
   margin: 20px;
+  object-fit: contain;
 }
 
 .modal-icons {

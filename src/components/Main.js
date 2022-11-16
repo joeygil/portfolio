@@ -71,9 +71,6 @@ const Main = () => {
     document.getElementById("weatherModal").style.opacity = "0";
   };
 
-  const allModals = document.querySelectorAll("div[id$='Modal']");
-  console.log(allModals);
-
   return (
     <>
       <main>
