@@ -16,8 +16,8 @@ body {
   height: 150%;
   overflow: auto;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.7s;
   opacity: 0.5;
 }
 
@@ -28,11 +28,11 @@ body {
   flex-direction: row-reverse;
   background-color: #fefefe;
   margin: 10% auto;
-  padding: 30px;
+  padding: 45px;
   width: 80%;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
   border-radius: 25px;
-  animation: appear 1s ease-in;
+  /* animation: appear 1s ease-in; */
   transition-timing-function: ease-in;
   font-family: "Cutive Mono", monospace;
   line-height: 1.1rem;
@@ -41,6 +41,7 @@ body {
 @media only screen and (max-width: 500px) {
   .modal {
     top: 0vh;
+    transition: 1s;
   }
   .modal-content {
     flex-direction: column;
@@ -50,33 +51,31 @@ body {
   }
   .modal-main-image {
     margin: 0 !important;
-    padding: 0;
-    object-fit: contain;
+    padding: 0 !important;
+    /* object-fit: contain; */
     width: 120% !important;
   }
 
-  .modal-main-image-container {
-    display: flex;
-    justify-content: center;
-  }
+
 }
 
 .modal-main-image {
   width: 70%;
   margin: 20px;
   object-fit: contain;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .modal-icons {
   width: 50px;
 }
-
+/* 
 @keyframes appear {
   0% {
     opacity: 0.9;
     transform: translateY(-10px);
   }
-}
+} */
 
 .modal-info {
   text-align: right;
