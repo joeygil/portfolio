@@ -70,6 +70,7 @@ const AboutMe = () => {
               className="github-link"
               href="https://github.com/joeygil"
               target="_blank"
+              aria-label="view my github"
             >
               <img
                 className="github"
@@ -81,6 +82,7 @@ const AboutMe = () => {
               className="github-link"
               href="https://github.com/joeygil"
               target="_blank"
+              aria-label="view my github"
             >
               <img
                 className="github-wht"
@@ -92,6 +94,7 @@ const AboutMe = () => {
               className="linkedin-link"
               href="https://www.linkedin.com/in/joey-gilchrist-670985250/"
               target="_blank"
+              aria-label="view my linked in profile"
             >
               <img
                 className="linked-in"

@@ -105,6 +105,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/newsapp.jpg")}
+                alt="news app preview"
               />
 
               <span className="modal-info">
@@ -118,10 +119,12 @@ const Main = () => {
                   <a
                     href="https://joeygil.github.io/frontendmentor-newsapp/"
                     target="_blank"
+                    aria-label="view the live website"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live website"
                     />
                   </a>
                 </span>
@@ -130,10 +133,12 @@ const Main = () => {
                   <a
                     href="https://github.com/joeygil/frontendmentor-newsapp"
                     target="_blank"
+                    aria-label="view the github repo"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="github logo"
                     />
                   </a>
                 </span>
@@ -151,6 +156,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/adventureapp.jpg")}
+                alt="adventure app preview"
               />
 
               <span className="modal-info">
@@ -163,10 +169,15 @@ const Main = () => {
                 <hr />
                 <span>
                   <span>Live</span>
-                  <a href="https://theadventureapp.netlify.app" target="_blank">
+                  <a
+                    href="https://theadventureapp.netlify.app"
+                    target="_blank"
+                    aria-label="view the live website"
+                  >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live site"
                     />
                   </a>
                 </span>
@@ -175,10 +186,12 @@ const Main = () => {
                   <a
                     href="https://github.com/joeygil/adventure-app"
                     target="_blank"
+                    aria-label="view the github repo"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="link to github repo"
                     />
                   </a>
                 </span>
@@ -197,6 +210,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/todo-app.jpg")}
+                alt="todo app preview"
               />
 
               <span className="modal-info">
@@ -206,19 +220,29 @@ const Main = () => {
                 <hr />
                 <span>
                   <span>Live</span>
-                  <a href="https://joeygil.github.io/todoapp/" target="_blank">
+                  <a
+                    href="https://joeygil.github.io/todoapp/"
+                    target="_blank"
+                    aria-label="view the live website"
+                  >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live site"
                     />
                   </a>
                 </span>
                 <span>
                   <span>Github</span>
-                  <a href="https://github.com/joeygil/todoapp" target="_blank">
+                  <a
+                    href="https://github.com/joeygil/todoapp"
+                    target="_blank"
+                    aria-label="view the github repo"
+                  >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="link to github repo"
                     />
                   </a>
                 </span>
@@ -236,6 +260,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/calculator.jpg")}
+                alt="calculator app preview"
               />
 
               <span className="modal-info">
@@ -249,10 +274,12 @@ const Main = () => {
                   <a
                     href="https://joeygil.github.io/calculator/"
                     target="_blank"
+                    aria-label="view the live website"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live site"
                     />
                   </a>
                 </span>
@@ -261,10 +288,12 @@ const Main = () => {
                   <a
                     href="https://github.com/joeygil/calculator"
                     target="_blank"
+                    aria-label="view the github repo"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="link to github repo"
                     />
                   </a>
                 </span>
@@ -282,6 +311,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/reddit-client.jpg")}
+                alt="reddit client preview"
               />
 
               <span className="modal-info">
@@ -296,10 +326,12 @@ const Main = () => {
                   <a
                     href="https://joeygil-reddit-client.netlify.app/"
                     target="_blank"
+                    aria-label="view the live website"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live site"
                     />
                   </a>
                 </span>
@@ -308,10 +340,12 @@ const Main = () => {
                   <a
                     href="https://github.com/joeygil/reddit-client"
                     target="_blank"
+                    aria-label="view the github repo"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="link to github repo"
                     />
                   </a>
                 </span>
@@ -329,6 +363,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/frontendmentor-room.jpg")}
+                alt="furniture app preview"
               />
 
               <span className="modal-info">
@@ -344,10 +379,12 @@ const Main = () => {
                   <a
                     href="https://joeygil.github.io/room-homepage-master/"
                     target="_blank"
+                    aria-label="view the live website"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live site"
                     />
                   </a>
                 </span>
@@ -356,10 +393,12 @@ const Main = () => {
                   <a
                     href="https://github.com/joeygil/room-homepage-master"
                     target="_blank"
+                    aria-label="view the github repo"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="link to githib repo"
                     />
                   </a>
                 </span>
@@ -377,6 +416,7 @@ const Main = () => {
               <img
                 className="modal-main-image"
                 src={require("../images/weather.png")}
+                alt="weather app preview"
               />
 
               <span className="modal-info">
@@ -392,10 +432,12 @@ const Main = () => {
                   <a
                     href="https://joeygil.github.io/weather-app/"
                     target="_blank"
+                    aria-label="view the live website"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/link.png")}
+                      alt="link to live site"
                     />
                   </a>
                 </span>
@@ -404,10 +446,12 @@ const Main = () => {
                   <a
                     href="https://github.com/joeygil/weather-app"
                     target="_blank"
+                    aria-label="view the github repo"
                   >
                     <img
                       className="modal-icons"
                       src={require("../images/github-logo.png")}
+                      alt="link to github repo"
                     />
                   </a>
                 </span>
