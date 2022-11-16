@@ -7,6 +7,97 @@ body {
   background-color: black;
 }
 
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 220vh;
+  width: 0;
+  height: 150%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+  opacity: 0.5;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: row-reverse;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  width: 80%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 25px;
+  animation: appear 1s ease-in;
+  transition-timing-function: ease-in;
+  font-family: "Cutive Mono", monospace;
+  line-height: 1.1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .modal {
+    top: 0vh;
+  }
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 5px 20px;
+  }
+  .modal-main-image {
+    margin: 0 !important;
+    padding: 0;
+    object-fit: contain;
+    width: 120% !important;
+  }
+
+  .modal-main-image-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal-main-image {
+  width: 70%;
+  margin: 20px;
+}
+
+.modal-icons {
+  width: 50px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0.9;
+    transform: translateY(-10px);
+  }
+}
+
+.modal-info {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .wrapper {
   height: 100vh;
   overflow-y: auto;
@@ -575,6 +666,23 @@ h2 {
   align-items: center;
   justify-content: center;
   margin: 10px;
+  transition: 1s;
+}
+
+.weather {
+  width: 275px;
+  height: 275px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background-image: url(./images/weather.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 
 .calculator-schpeel {
@@ -584,6 +692,12 @@ h2 {
   transition: 1s;
 }
 
+.weather-schpeel {
+  width: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: 1s;
+}
 .newsapp-schpeel {
   width: 100%;
   border-radius: 15px;
@@ -627,6 +741,10 @@ h2 {
   .furniture-schpeel {
     display: none;
   }
+
+  .weather-schpeel {
+    display: none;
+  }
 }
 
 .calculator-schpeel:hover {
@@ -634,6 +752,11 @@ h2 {
 }
 
 .calculator:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+}
+
+.weather:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
 }
@@ -746,6 +869,10 @@ h2 {
   opacity: 1;
 }
 
+.weather-schpeel:hover {
+  opacity: 1;
+}
+
 .todo:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
@@ -829,11 +956,11 @@ h2 {
 }
 
 .project-overlays {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-top-width: 5px;
   border-top-style: solid;
   border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
-  padding: 10px;
+  padding: 7px;
   color: #fed198;
   text-shadow: 2px 5px 18px rgba(0, 0, 0, 0.6);
   translate: rotate(30deg);
@@ -845,8 +972,30 @@ h2 {
   font-family: "B612 Mono", monospace;
 }
 
+.calculator:hover .project-overlays {
+  display: block;
+}
+.adventure:hover .project-overlays {
+  display: block;
+}
+.todo:hover .project-overlays {
+  display: block;
+}
+.weather:hover .project-overlays {
+  display: block;
+}
+.furniture:hover:hover .project-overlays {
+  display: block;
+}
+.reddit-client:hover .project-overlays {
+  display: block;
+}
+.news-app:hover .project-overlays {
+  display: block;
+}
+
 .project-overlays-coming-soon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-top-width: 5px;
   border-top-style: solid;
   border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
@@ -924,12 +1073,23 @@ a {
     margin-bottom: 20px;
   }
 
+  .weather {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
   .furniture {
     width: 90%;
     height: 150px;
     margin-bottom: 20px;
   }
 
+  .weather-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .adventure-link {
     width: 100%;
     display: flex;
