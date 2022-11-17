@@ -6,7 +6,6 @@ import AboutMe from "./components/AboutMe";
 import Socials from "./components/Socials";
 import Certifications from "./components/Certifications";
 import Footer from "./components/Footer";
-import ReactLoading from "react-loading";
 import { useState, useEffect } from "react";
 
 function App() {
