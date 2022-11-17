@@ -8,19 +8,10 @@ const Socials = () => {
         <div className="socials">
           <h2>
             <div className="wave">👋</div>
-            <span id="socials-tags" className="tags-in-dark">
-              {" "}
-              &#x3c;h2&#x3e;{" "}
-            </span>{" "}
             "Ey up!"
-            <span id="socials-tags" className="tags-in-dark">
-              {" "}
-              &#x3c;/h2&#x3e;{" "}
-            </span>
           </h2>
           <p className="get-in-touch">
-            Get in touch below if you have any questions, comments or... 🤞 job
-            offers!
+            Get in touch below if you have any questions, or comments!
           </p>
           <Form />
         </div>

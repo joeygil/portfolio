@@ -55,15 +55,14 @@ body {
     /* object-fit: contain; */
     width: 120% !important;
   }
-
-
 }
 
 .modal-main-image {
   width: 70%;
   margin: 20px;
   object-fit: contain;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .modal-icons {
@@ -1262,7 +1261,9 @@ a {
   }
 }
 
+
 .socials-container {
+  position: relative;
   border-top-width: 5px;
   border-top-style: solid;
   border-image: linear-gradient(to right, darkblue, mediumorchid, orange) 1;
