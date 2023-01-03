@@ -71,8 +71,431 @@ const Main = () => {
     document.getElementById("weatherModal").style.opacity = "0";
   };
 
+  const handleEmmaModal = () => {
+    document.getElementById("emmaModal").style.width = "100%";
+    document.getElementById("emmaModal").style.opacity = "1";
+  };
+
+  const handleCloseEmmaModal = () => {
+    document.getElementById("emmaModal").style.width = "0";
+    document.getElementById("emmaModal").style.opacity = "0";
+  };
+
   return (
     <>
+      {/* MODALS */}
+
+      <div id="newsModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseNewsModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/newsapp.jpg")}
+            alt="news app preview"
+          />
+
+          <span className="modal-info">
+            <h3>frontendmentor.io News App Challenge</h3>
+            Used HTML, CSS, Javascript and React to build a replica news page.
+            This frontendmentor.io challenge was completed using CSS Grid and
+            Flexbox for the layout.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://joeygil.github.io/frontendmentor-newsapp/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live website"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/frontendmentor-newsapp"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="github logo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* ADVENTURE MODAL */}
+
+      <div id="adventureModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseAdventureModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/adventureapp.jpg")}
+            alt="adventure app preview"
+          />
+
+          <span className="modal-info">
+            <h3>Adventure App</h3>
+            Used HTML, CSS, Javascript, React and the Fetch API to build an app
+            to pick an adventure for my wife and I to go on. It will allow you
+            to add adventures to the json file via POST request and receive a
+            suggestion from the json based on some simple filters via GET. We
+            use it when we're at a loose end!
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://theadventureapp.netlify.app"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/adventure-app"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* TODO MODAL */}
+
+      <div id="todoModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseTodoModal} className="close">
+            x
+          </span>
+
+          <img
+            className="modal-main-image"
+            src={require("../images/todo-app.jpg")}
+            alt="todo app preview"
+          />
+
+          <span className="modal-info">
+            <h3>Todo List App</h3>
+            A basic to do list app build using HTML, CSS and Javascript. Users
+            can add, remove and tick off items in their list.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://joeygil.github.io/todoapp/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/todoapp"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* CALCULATOR MODAL */}
+
+      <div id="calculatorModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseCalculatorModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/calculator.jpg")}
+            alt="calculator app preview"
+          />
+
+          <span className="modal-info">
+            <h3>Calculator App</h3>
+            A simple calculator app with a realistic old school digital screen.
+            Built using HTML, CSS and Javascript in React, this app allows users
+            to make basic maths calculations.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://joeygil.github.io/calculator/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/calculator"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* REDDIT CLIENT MODAL */}
+
+      <div id="redditModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseRedditModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/reddit-client.jpg")}
+            alt="reddit client preview"
+          />
+
+          <span className="modal-info">
+            <h3>Reddit Client</h3>
+            Built using HTML, CSS, Javascript in React, this app uses the fetch
+            API to retrieve data from Reddit. Users can either search posts or
+            fetch the top current posts and have them rendered on screen. These
+            previews are clickable links to Reddit itself.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://joeygil-reddit-client.netlify.app/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/reddit-client"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* FURNITURE MODAL */}
+
+      <div id="furnitureModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseFurnitureModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/frontendmentor-room.jpg")}
+            alt="furniture app preview"
+          />
+
+          <span className="modal-info">
+            <h3>frontendmentor.io Furniture App</h3>
+            Built using HTML, CSS, Javascript in React, this frontendmentor.io
+            challenge required that we recreate an app for a furniture store. I
+            used CSS Grid and Flexbox for the layout and built a Javascript
+            image changing hero banner at the top of the page.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://joeygil.github.io/room-homepage-master/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/room-homepage-master"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to githib repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* WEATHER MODAL  */}
+
+      <div id="weatherModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseWeatherModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/weather.png")}
+            alt="weather app preview"
+          />
+
+          <span className="modal-info">
+            <h3>Live Weather App</h3>
+            Built using HTML, CSS, Javascript in React, this app uses the Fetch
+            API to GET live weather information from anywhere in the world.
+            Users can search any city worldwide and receive conditions,
+            including temperature, wind direction, wind speed and a general
+            description.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://joeygil.github.io/weather-app/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/weather-app"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div id="emmaModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseEmmaModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/emmagraingerhair.jpg")}
+            alt="emma grainger hair app preview"
+          />
+
+          <span className="modal-info">
+            <h3>Emma Grainger Hair</h3>
+            Built using HTML, TailwindCSS, Framer Motion and Javascript in
+            React, this interactive web app for a local hair salon provides
+            information on services and an online booking system.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://emmagrainger.hair"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/emmagraingerhair"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      {/* MODAL END */}
       <main>
         <span className="tags-in-top"> &#x3c;h2&#x3e; </span>
         <h2 id="web-dev" className="web-dev">
@@ -95,371 +518,16 @@ const Main = () => {
             &#x22;my-work&#x22;&#x3e;{" "}
           </span>
 
-          {/* MODALS */}
-
-          <div id="newsModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseNewsModal} className="close">
-                x
-              </span>
-              <img
-                className="modal-main-image"
-                src={require("../images/newsapp.jpg")}
-                alt="news app preview"
-              />
-
-              <span className="modal-info">
-                <h3>frontendmentor.io News App Challenge</h3>
-                Used HTML, CSS, Javascript and React to build a replica news
-                page. This frontendmentor.io challenge was completed using CSS
-                Grid and Flexbox for the layout.
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://joeygil.github.io/frontendmentor-newsapp/"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live website"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/frontendmentor-newsapp"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="github logo"
-                    />
-                  </a>
-                </span>
-              </span>
+          <a className="emmagrainger-link" target="_blank">
+            <div className="emmagrainger" onClick={handleEmmaModal}>
+              <h3 className="project-overlays">emmaGraingerHair</h3>
+              {/* <img
+                className="newsapp-schpeel"
+                src={require("../images/news-app-schpeel.jpg")}
+                alt="info on my todo app project"
+              /> */}
             </div>
-          </div>
-
-          {/* ADVENTURE MODAL */}
-
-          <div id="adventureModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseAdventureModal} className="close">
-                x
-              </span>
-              <img
-                className="modal-main-image"
-                src={require("../images/adventureapp.jpg")}
-                alt="adventure app preview"
-              />
-
-              <span className="modal-info">
-                <h3>Adventure App</h3>
-                Used HTML, CSS, Javascript, React and the Fetch API to build an
-                app to pick an adventure for my wife and I to go on. It will
-                allow you to add adventures to the json file via POST request
-                and receive a suggestion from the json based on some simple
-                filters via GET. We use it when we're at a loose end!
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://theadventureapp.netlify.app"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live site"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/adventure-app"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="link to github repo"
-                    />
-                  </a>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          {/* TODO MODAL */}
-
-          <div id="todoModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseTodoModal} className="close">
-                x
-              </span>
-
-              <img
-                className="modal-main-image"
-                src={require("../images/todo-app.jpg")}
-                alt="todo app preview"
-              />
-
-              <span className="modal-info">
-                <h3>Todo List App</h3>
-                A basic to do list app build using HTML, CSS and Javascript.
-                Users can add, remove and tick off items in their list.
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://joeygil.github.io/todoapp/"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live site"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/todoapp"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="link to github repo"
-                    />
-                  </a>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          {/* CALCULATOR MODAL */}
-
-          <div id="calculatorModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseCalculatorModal} className="close">
-                x
-              </span>
-              <img
-                className="modal-main-image"
-                src={require("../images/calculator.jpg")}
-                alt="calculator app preview"
-              />
-
-              <span className="modal-info">
-                <h3>Calculator App</h3>
-                A simple calculator app with a realistic old school digital
-                screen. Built using HTML, CSS and Javascript in React, this app
-                allows users to make basic maths calculations.
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://joeygil.github.io/calculator/"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live site"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/calculator"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="link to github repo"
-                    />
-                  </a>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          {/* REDDIT CLIENT MODAL */}
-
-          <div id="redditModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseRedditModal} className="close">
-                x
-              </span>
-              <img
-                className="modal-main-image"
-                src={require("../images/reddit-client.jpg")}
-                alt="reddit client preview"
-              />
-
-              <span className="modal-info">
-                <h3>Reddit Client</h3>
-                Built using HTML, CSS, Javascript in React, this app uses the
-                fetch API to retrieve data from Reddit. Users can either search
-                posts or fetch the top current posts and have them rendered on
-                screen. These previews are clickable links to Reddit itself.
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://joeygil-reddit-client.netlify.app/"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live site"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/reddit-client"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="link to github repo"
-                    />
-                  </a>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          {/* FURNITURE MODAL */}
-
-          <div id="furnitureModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseFurnitureModal} className="close">
-                x
-              </span>
-              <img
-                className="modal-main-image"
-                src={require("../images/frontendmentor-room.jpg")}
-                alt="furniture app preview"
-              />
-
-              <span className="modal-info">
-                <h3>frontendmentor.io Furniture App</h3>
-                Built using HTML, CSS, Javascript in React, this
-                frontendmentor.io challenge required that we recreate an app for
-                a furniture store. I used CSS Grid and Flexbox for the layout
-                and built a Javascript image changing hero banner at the top of
-                the page.
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://joeygil.github.io/room-homepage-master/"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live site"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/room-homepage-master"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="link to githib repo"
-                    />
-                  </a>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          {/* WEATHER MODAL  */}
-
-          <div id="weatherModal" className="modal">
-            <div className="modal-content">
-              <span onClick={handleCloseWeatherModal} className="close">
-                x
-              </span>
-              <img
-                className="modal-main-image"
-                src={require("../images/weather.png")}
-                alt="weather app preview"
-              />
-
-              <span className="modal-info">
-                <h3>Live Weather App</h3>
-                Built using HTML, CSS, Javascript in React, this app uses the
-                Fetch API to GET live weather information from anywhere in the
-                world. Users can search any city worldwide and receive
-                conditions, including temperature, wind direction, wind speed
-                and a general description.
-                <hr />
-                <span>
-                  <span>Live</span>
-                  <a
-                    href="https://joeygil.github.io/weather-app/"
-                    target="_blank"
-                    aria-label="view the live website"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/link.png")}
-                      alt="link to live site"
-                    />
-                  </a>
-                </span>
-                <span>
-                  <span>Github</span>
-                  <a
-                    href="https://github.com/joeygil/weather-app"
-                    target="_blank"
-                    aria-label="view the github repo"
-                  >
-                    <img
-                      className="modal-icons"
-                      src={require("../images/github-logo.png")}
-                      alt="link to github repo"
-                    />
-                  </a>
-                </span>
-              </span>
-            </div>
-          </div>
-
-          {/* MODAL END */}
+          </a>
 
           <a className="todo-link" target="_blank">
             <div className="news-app" onClick={handleNewsModal}>
@@ -532,21 +600,6 @@ const Main = () => {
           <a className="weather-link" target="_blank">
             <div className="weather" onClick={handleWeatherModal}>
               <h3 className="project-overlays">liveWeather</h3>
-              {/* <img
-                className="newsapp-schpeel"
-                src={require("../images/news-app-schpeel.jpg")}
-                alt="info on my todo app project"
-              /> */}
-            </div>
-          </a>
-
-          <a
-            className="coming-soon-link"
-            // href="https://joeygil.github.io/frontendmentor-newsapp/"
-            // target="_blank"
-          >
-            <div className="coming-soon">
-              <h3 className="project-overlays-coming-soon">comingSoon</h3>
               {/* <img
                 className="newsapp-schpeel"
                 src={require("../images/news-app-schpeel.jpg")}

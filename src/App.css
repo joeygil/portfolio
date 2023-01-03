@@ -11,7 +11,7 @@ body {
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 220vh;
+  /* top: 220vh; */
   width: 0;
   height: 150%;
   overflow: auto;
@@ -40,7 +40,6 @@ body {
 
 @media only screen and (max-width: 500px) {
   .modal {
-    top: 0vh;
     transition: 1s;
   }
   .modal-content {
@@ -124,7 +123,7 @@ header {
 }
 
 .scroll {
-  color: white;
+  color: black;
   font-size: 0;
   position: relative;
   /* top: -10px; */
@@ -165,8 +164,8 @@ header {
 .title {
   font-size: 5rem;
   font-family: "B612 Mono", monospace;
-  color: white;
-  text-shadow: 0 0 5px black;
+  color: #222222;
+  /* text-shadow: 0 0 5px black; */
   position: relative;
 }
 
@@ -387,8 +386,7 @@ canvas {
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
   position: relative;
-  background: linear-gradient(mediumorchid, orange 30px, transparent 0)
-    no-repeat;
+  background: linear-gradient(white 30px, transparent 0) no-repeat;
   background-size: 2px 40px;
   background-position: 50% 0px;
   animation: spinx 5s linear infinite;
@@ -418,25 +416,25 @@ canvas {
 @keyframes lqt {
   0%,
   100% {
-    background-image: linear-gradient(mediumorchid 40px, transparent 0);
+    background-image: linear-gradient(white 40px, transparent 0);
     background-position: 0% 0px;
   }
   50% {
-    background-image: linear-gradient(mediumorchid 40px, transparent 0);
+    background-image: linear-gradient(white 40px, transparent 0);
     background-position: 0% 40px;
   }
   50.1% {
-    background-image: linear-gradient(mediumorchid 40px, transparent 0);
+    background-image: linear-gradient(white 40px, transparent 0);
     background-position: 0% -40px;
   }
 }
 @keyframes lqb {
   0% {
-    background-image: linear-gradient(orange 40px, transparent 0);
+    background-image: linear-gradient(white 40px, transparent 0);
     background-position: 0 40px;
   }
   100% {
-    background-image: linear-gradient(orange 40px, transparent 0);
+    background-image: linear-gradient(white 40px, transparent 0);
     background-position: 0 -40px;
   }
 }
@@ -548,6 +546,19 @@ h2 {
   top: 40px;
 }
 
+.title-tags-in {
+  color: #222;
+  font-size: 1.2rem;
+  display: inline-block;
+  transform: rotate(-10deg);
+  font-family: "Cutive Mono", monospace;
+  margin: 3px;
+  letter-spacing: normal;
+  position: relative;
+  left: -65px;
+  top: 40px;
+}
+
 .tags-in-about {
   color: #fed198;
   font-size: 0.9rem;
@@ -560,6 +571,19 @@ h2 {
 
 .tags-in-bottom {
   color: #fed198;
+  font-size: 1.2rem;
+  display: inline-block;
+  transform: rotate(-10deg);
+  font-family: "Cutive Mono", monospace;
+  margin: 3px;
+  letter-spacing: normal;
+  position: relative;
+  right: -100%;
+  top: -60px;
+}
+
+.title-tags-in-bottom {
+  color: #222;
   font-size: 1.2rem;
   display: inline-block;
   transform: rotate(-10deg);
@@ -684,6 +708,22 @@ h2 {
   margin: 10px;
 }
 
+.emmagrainger {
+  width: 275px;
+  height: 275px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background-image: url(./images/emmagraingerhair.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
 .calculator-schpeel {
   width: 100%;
   border-radius: 15px;
@@ -718,7 +758,7 @@ h2 {
   transition: 1s;
 }
 
-@media only screen and (max-width: 821px) {
+/* @media only screen and (max-width: 821px) {
   .calculator-schpeel {
     display: none;
   }
@@ -744,7 +784,7 @@ h2 {
   .weather-schpeel {
     display: none;
   }
-}
+} */
 
 .calculator-schpeel:hover {
   opacity: 1;
@@ -1033,19 +1073,11 @@ a {
   }
 
   .todo {
-    width: 90%;
-    height: 150px;
-  }
-  .todo-link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .news-app {
-    width: 90%;
-    height: 150px;
-    margin-bottom: 20px;
+    display: none;
   }
 
   .coming-soon {
@@ -1073,29 +1105,26 @@ a {
   }
 
   .weather {
-    width: 90%;
-    height: 150px;
-    margin-bottom: 20px;
+    display: none;
   }
 
   .furniture {
+    display: none;
+  }
+
+  .emmagrainger {
     width: 90%;
     height: 150px;
     margin-bottom: 20px;
   }
 
-  .weather-link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .adventure-link {
+  .emmagrainger-link {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .furniture-link {
+  .adventure-link {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1260,7 +1289,6 @@ a {
     margin-bottom: 30px;
   }
 }
-
 
 .socials-container {
   position: relative;
