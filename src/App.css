@@ -38,6 +38,16 @@ body {
   line-height: 1.1rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .title-tags-in {
+    display: none !important;
+  }
+
+  .title-tags-in-bottom {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .modal {
     transition: 1s;
