@@ -716,7 +716,7 @@ h2 {
   background-image: url(./images/emmagraingerhair.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   transition: 0.4s;
   display: flex;
   align-items: center;
@@ -932,6 +932,11 @@ h2 {
   cursor: pointer;
 }
 
+.emmagrainger:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+}
+
 .news-app:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
@@ -948,6 +953,11 @@ h2 {
 }
 
 .furniture:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.emmagrainger:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -1024,6 +1034,9 @@ h2 {
   display: block;
 }
 .furniture:hover:hover .project-overlays {
+  display: block;
+}
+.emmagrainger:hover:hover .project-overlays {
   display: block;
 }
 .reddit-client:hover .project-overlays {
