@@ -81,6 +81,16 @@ const Main = () => {
     document.getElementById("emmaModal").style.opacity = "0";
   };
 
+  const handleDivineModal = () => {
+    document.getElementById("divineModal").style.width = "100%";
+    document.getElementById("divineModal").style.opacity = "1";
+  };
+
+  const handleCloseDivineModal = () => {
+    document.getElementById("divineModal").style.width = "0";
+    document.getElementById("divineModal").style.opacity = "0";
+  };
+
   return (
     <>
       {/* MODALS */}
@@ -446,6 +456,55 @@ const Main = () => {
         </div>
       </div>
 
+      <div id="divineModal" className="modal">
+        <div className="modal-content">
+          <span onClick={handleCloseDivineModal} className="close">
+            x
+          </span>
+          <img
+            className="modal-main-image"
+            src={require("../images/divine.png")}
+            alt="dvine hair app preview"
+          />
+
+          <span className="modal-info">
+            <h3>Divine Hair</h3>
+            Built using HTML, TailwindCSS, Framer Motion and Javascript in
+            React, this interactive web app for a local hair salon provides
+            information on services.
+            <hr />
+            <span>
+              <span>Live</span>
+              <a
+                href="https://divine-hair-kn.netlify.app/"
+                target="_blank"
+                aria-label="view the live website"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/link.png")}
+                  alt="link to live site"
+                />
+              </a>
+            </span>
+            <span>
+              <span>Github</span>
+              <a
+                href="https://github.com/joeygil/divine-hair"
+                target="_blank"
+                aria-label="view the github repo"
+              >
+                <img
+                  className="modal-icons"
+                  src={require("../images/github-logo.png")}
+                  alt="link to github repo"
+                />
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+
       <div id="emmaModal" className="modal">
         <div className="modal-content">
           <span onClick={handleCloseEmmaModal} className="close">
@@ -518,6 +577,17 @@ const Main = () => {
             &#x22;my-work&#x22;&#x3e;{" "}
           </span>
 
+          <a className="divine-link" target="_blank">
+            <div className="divine" onClick={handleDivineModal}>
+              <h3 className="project-overlays">divineHair</h3>
+              {/* <img
+                className="newsapp-schpeel"
+                src={require("../images/news-app-schpeel.jpg")}
+                alt="info on my todo app project"
+              /> */}
+            </div>
+          </a>
+
           <a className="emmagrainger-link" target="_blank">
             <div className="emmagrainger" onClick={handleEmmaModal}>
               <h3 className="project-overlays">emmaGraingerHair</h3>
@@ -535,17 +605,6 @@ const Main = () => {
               {/* <img
                 className="newsapp-schpeel"
                 src={require("../images/news-app-schpeel.jpg")}
-                alt="info on my todo app project"
-              /> */}
-            </div>
-          </a>
-
-          <a className="adventure-link" target="_blank">
-            <div className="adventure" onClick={handleAdventureModal}>
-              <h3 className="project-overlays">adventureApp</h3>
-              {/* <img
-                className="adventure-schpeel"
-                src={require("../images/adventure-schpeel.png")}
                 alt="info on my todo app project"
               /> */}
             </div>

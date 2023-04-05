@@ -734,6 +734,22 @@ h2 {
   margin: 10px;
 }
 
+.divine {
+  width: 275px;
+  height: 275px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  background-image: url(./images/divine.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
 .calculator-schpeel {
   width: 100%;
   border-radius: 15px;
@@ -947,6 +963,11 @@ h2 {
   cursor: pointer;
 }
 
+.divine:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  cursor: pointer;
+}
+
 .news-app:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   cursor: pointer;
@@ -968,6 +989,11 @@ h2 {
 }
 
 .emmagrainger:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.divine:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
@@ -1047,6 +1073,9 @@ h2 {
   display: block;
 }
 .emmagrainger:hover:hover .project-overlays {
+  display: block;
+}
+.divine:hover:hover .project-overlays {
   display: block;
 }
 .reddit-client:hover .project-overlays {
@@ -1141,7 +1170,18 @@ a {
     margin-bottom: 20px;
   }
 
+  .divine {
+    width: 90%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
   .emmagrainger-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .divine-link {
     width: 100%;
     display: flex;
     justify-content: center;
